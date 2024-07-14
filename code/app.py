@@ -49,6 +49,10 @@ def main():
     uploaded_image = st.file_uploader("upload an image fot the docuement (Optional)",
                                       type=['jpg','png'])
     
+    st.header('Document Chapter')
+    chapters=[]
+    chapter_count=st.number_input('chapter number',min_value=1,max_value=10,value=1)
+    
     
 if __name__  == '__main__':
     main()
